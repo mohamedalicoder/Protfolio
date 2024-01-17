@@ -1,0 +1,291 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+
+.logo{
+    padding-top: 15px;
+}
+.logo h1{
+    font-size: 30px;
+}
+ul{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+ul li{
+    list-style:none ; 
+}
+ul a {
+    text-decoration: none;
+    color:aliceblue;
+    text-align: center;
+    transition: .2s all ease-in-out;
+}
+ul a:hover{
+    color: blueviolet;
+}
+
+/*-------------------- end nav section ------- */
+
+/* start project  */
+
+.main-project{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 110px;
+    width: 100%;
+    height: 150vh;
+    flex-wrap: wrap;
+}
+.fel{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+
+.item a{
+    text-decoration: none;
+    
+}
+.item:hover{
+   transform: scale(1.1);
+}
+    .item{
+        transition: all ease 0.5s;
+        height: 300px;
+        border-radius: 15px;
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+        .guss{
+            background-image: url(./assets/23877086_6845771.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .art{
+            background-image: url(./assets/goal.png);
+            background-position: center;
+            background-size: cover; 
+        }
+        .havana{
+            background-image: url(./assets/7532707_2064.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .drum{
+            background-image: url(./assets/1162833_ORHG0C0.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .bootstrab{
+            background-image: url(./assets/4364868_2308292.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .dogs{
+            background-image: url(./assets/dog.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+
+/*---------------- start landing  */
+
+.landing .container{
+    /* background-image: linear-gradient(#29007b ,black); */
+    display: flex;
+    padding: 100px;
+    width: 100%;
+    height: 600px;
+    align-items: center;
+    justify-content: space-between;
+}
+.img img{
+height: 340px;
+animation-name: example;
+animation-duration: 6s;
+animation-iteration-count:infinite;
+position: relative;
+
+}
+@keyframes example {
+    0% {top: 0;}
+    50% {top: 100px;}
+    100%{top: 0;}
+}
+.img{
+    width: 50%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+}
+.container .text{
+    text-align: start;
+    width: 50%;
+}
+.container .text h1{
+    color: aliceblue;
+    font-size: 40px;
+}
+.container .text p{
+    color: darkgrey;
+    font-size: 30px;
+}
+/*------------------ end landing  */
+
+/*--------------- start service  */
+
+.service .container{
+display: flex;
+width: 100%;
+height: 500px;
+justify-content: space-around;
+align-items: center;
+}
+.service .container .box{
+background-color:white;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+color:white;
+width: 25%;
+height: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 10px;
+transition:all ease 0.5s
+}
+.service .container .box:hover{
+    transform: scale(1.1);
+    border-top: 5px solid #02c1fc;
+}
+
+
+.main-title {
+    text-transform: uppercase;
+    margin: 80px auto 10px;
+    border: 2px solid black;
+    padding: 10px 20px;
+    font-size: 30px;
+    width: fit-content;
+    position: relative;
+    z-index: 1;
+    transition: var(--main-transition);
+}
+
+.ph1{
+    background-image: url(./assets/programming-background-with-person-working-with-codes-computer.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.ph2{
+    background-image: url(./assets/abstract-design-with-colorful-patterns-nature-leaf-generated-by-ai.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.ph3{
+    background-image: url(./assets/abstract-glowing-flame-drops-electric-illumination-generative-ai.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+/* start media  */
+@media (max-width:860px) {
+    .uls{
+        display: none;
+    }
+    
+}
+@media (max-width:860px) {
+    .logo img{
+        display: none;
+    }
+    
+}
+@media (max-width:860px) {
+    #hii{
+        position: relative;
+        left: 130px;
+        top: 30px;
+        animation-duration: 4s;
+        animation-name: opac;
+        animation-iteration-count: infinite;
+    }
+    @keyframes opac{
+        0%{opacity: 0;}
+        50%{opacity: 1;}
+        100%{opacity: 0;}
+    }
+    
+}
+@media (max-width:860px) {
+    .main-project{
+        height: 450vh;
+        justify-content: center;
+    }
+}
+
+/* start media  */
+
+@media (max-width:860px) {
+    .service .container {
+        height: 1000px;
+        position: relative;
+        display:inline-block;
+    }
+}
+@media (max-width:860px) {
+    .service .container .box{
+        
+        position: relative;
+        top: 100px;
+        height: 200px;
+        width:300px;
+        left: 20% ;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width:860px) {
+    .landing .container {
+        display: block;
+        height: 1000px;
+    }
+}
+@media (max-width:860px) {
+    .landing .container .img
+    {
+        padding-left: 120px;
+        
+    }
+}
+
+@media (max-width:860px) {
+    .landing .container .img img
+    {
+        height: 300px;
+        
+    }
+}
+
