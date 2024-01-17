@@ -289,3 +289,10 @@ transition:all ease 0.5s
     }
 }
 
+@media (max-width:860px) {
+    #about
+    {
+        width: 90%;
+        
+    }
+}
